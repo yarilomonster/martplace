@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lvnh82');
+  src:  url('../fonts/icomoon.eot?lvnh82#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lvnh82') format('truetype'),
+    url('../fonts/icomoon.woff?lvnh82') format('woff'),
+    url('../fonts/icomoon.svg?lvnh82#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-bell:before {
+  content: "\e951";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-bubble:before {
+  content: "\e96b";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-magic-wand:before {
+  content: "\e997";
+}
+.icon-stats-bars:before {
+  content: "\e99c";
+}
+.icon-leaf:before {
+  content: "\e9a4";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+.icon-cloud-download:before {
+  content: "\e9c2";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-happy:before {
+  content: "\e9df";
+}
+.icon-wordpress:before {
+  content: "\eab4";
+}
+.icon-html-five:before {
+  content: "\eae4";
+}

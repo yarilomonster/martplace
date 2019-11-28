@@ -28,3 +28,23 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.rate-star {
+  display: inline-block;
+  margin-left: 14px;
+}
+.title {
+  font-size: 36px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 25px;
+  span {
+    color: $search-bg;
+  }
+}
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: $product-category;
+  margin-bottom: 58px;
+}

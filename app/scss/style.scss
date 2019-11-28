@@ -32,8 +32,8 @@
   position: relative;
   color: $template;
   &::after {
-    content: '';
-    background-image: url('../img/icons/wp.png');
+    content: "\eab4";
+    font-family: 'icomoon';
     position: absolute;
     width: 16px;
     height: 16px;
@@ -43,6 +43,7 @@
 }
 .info-price-love {
   padding: 7px 16px;
+  font-weight: 500;
   background-color: $info;
   color: $search-bg;
   border-radius: 30px;
@@ -55,9 +56,9 @@
   margin-right: auto;
   padding-left: 22px;
   &::after {
-    content: '';
+    content: "\e9da";
+    font-family: 'icomoon';
     position: absolute;
-    background-image: url('../img/icons/heart.png');
     width: 16px;
     height: 14px;
     left: 0;
@@ -69,9 +70,9 @@
   position: relative;
   padding-left: 25px;
   &::after {
-    content: '';
+    content: "\e93a";
+    font-family: 'icomoon';
     position: absolute;
-    background-image: url('../img/icons/template-cart.png');
     width: 14px;
     height: 14px;
     left: 0;
@@ -232,6 +233,11 @@
       right: 0;
       top: 0;
       cursor: pointer;
+      &::after {
+        content: '\e986';
+        font-family: 'icomoon';
+        color: #fff;
+      }
     }
   }
 }
@@ -555,7 +561,10 @@
     background-size: cover;
     background-position: center;
     position: relative;
-
+    transition: all .3s;
+    &:hover .template-link {
+      height: 100%;
+    }
   }
   &-content {
     padding: 30px 27px;
@@ -623,5 +632,166 @@
     }
   }
 }
+/* Followers */
+.followers {
+  background-color: $header-bg;
+  &__inner {
+    padding-top: 120px;
+  }
+  &__box {
+    padding: 38px 28px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: 30px;
+    color: #000;
+  }
+} 
+.followers__slider-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ececec;
+  padding-top: 22px;
+}
+.followers__slider-nav {
+  width: 110px;
+  height: 45px;
+  background-color: $search-bg;
+  border-radius: 30px;
+  position: relative;
+}
+/* information */
+.information {
+  background-color: $information;
+  padding: 95px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.information__item {
+  text-align: center;
+  &-info {
+    position: relative;
+    font-size: 36px;
+    color: $information-color;
+    padding-top: 94px;
+    margin-bottom: 12px;
+    &::after {
+      position: absolute;
+      content: '\e9ae';
+      font-family: 'icomoon';
+      font-size: 48px;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  .cloud {
+    color: #58c9e9;
+    &::after {
+      content: "\e9c2";
+    }
+  }
+  .smile {
+    color: #77de51;
+    &::after {
+      content: '\e9df';
+    }
+  }
+  .members {
+    color: #ff6a6d;
+    &::after {
+      content: '\e972';
+    }
+  }
+  &-text {
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+  }
+}
+/* Choose */
+.choose {
+  padding: 115px 0;
+  background-color: #fdfdfd;
+}
+.choose__inner-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.choose__item {
+  background-color: #fff;
+  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  max-width: 360px;
+  padding: 68px 32px 45px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  span {
+    font-size: 48px;
+    color: rgba(92, 135, 248, 0.2);
+    font-weight: 300;
+    position: absolute;
+    left: 19px;
+    top: 22px;
+  }
+  &-img {
+    position: relative;
+    &::after {
+      content: '\e99c';
+      position: absolute;
+      font-size: 60px;
+      color: $search-bg;
+      font-family: 'icomoon';
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  &-title {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 24px; 
+    padding-top: 100px;
+  }
+  &-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $product-category;
+  }
+  .icon-magic {
+    &::after {
+      content: '\e997';
+    }
+  }
+  .icon-look {
+    &::after {
+      content: '\e98f';
+    }
+  }
+  .icon-bars {
+    &::after {
+      content: '\e99c';
+    }
+  }
+  .icon-leaf {
+    &::after {
+      content: '\e9a4';
+    }
+  }
+  .icon-phone {
+    &::after {
+      content: '\e958';
+    }
+  }
+}
+
 
 @import "media";
