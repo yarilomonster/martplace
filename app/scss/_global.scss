@@ -6,6 +6,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+html,
+body {
+	height: 100%;
+}
 a {
   display: inline-block;
   text-decoration: none;
@@ -21,6 +25,20 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: #fff;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.page-content {
+  background-color: #eff1f5;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
 }
 .container {
   max-width: 1170px;
@@ -46,4 +64,30 @@ body {
   line-height: 30px;
   color: $product-category;
   margin-bottom: 58px;
+}
+.breadcrumbs {
+  &__inner {
+
+  }
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: '/';
+          position: absolute;
+          left: 8px;
+          color: #fff;
+        }
+      }
+      &:last-child {
+        a,
+        span {
+         color: #bfcad7; 
+        }
+      }
+    }
+  }
 }
