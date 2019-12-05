@@ -41,3 +41,45 @@ body {
 .footer {
   flex: 0 0 auto;
 }
+.title {
+  font-size: 36px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 25px;
+  span {
+    color: $btn-bg;
+  }
+}
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: #555;
+  margin-bottom: 58px;
+}
+.breadcrumbs {
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: '/';
+          position: absolute;
+          left: 8px;
+          color: #fff;
+        }
+      }
+      a {
+        color: #fff;
+      }
+      &:last-child {
+        a,
+        span {
+         color: #bfcad7; 
+        }
+      }
+    }
+  }
+}
