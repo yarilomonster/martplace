@@ -43,6 +43,8 @@ $(function () {
     $(".lnr-list").removeClass('active');
   });
 
+  $('input, select').styler();
+
   var mixer = mixitup('.template__inner-box');
 
 });
