@@ -9,6 +9,8 @@ html {
 html,
 body {
   height: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 a {
   display: inline-block;
@@ -62,6 +64,9 @@ body {
   margin-bottom: 58px;
 }
 .breadcrumbs {
+  &__inner {
+    overflow: hidden;
+  }
   &__list {
     li {
       display: inline-block;
